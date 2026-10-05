@@ -1,13 +1,10 @@
 def bytes_to_kilobytes(value):
-    return value / 1024
+    result = value / 1024
+    return result
+
 def kilobytes_to_bytes(value):
-    return value * 1024
-
+    result = value * 1024
+    return result
 if __name__ == "__main__":
-    value = float(input("Введите число"))
-    direction = input().strip().lower()
-
-    if direction in ["to_b", "bytes_to_kilobites", "1", "байты в килобайты", "kb"]:
-        print (bytes_to_kilobytes(value))
-    else:
-        print (kilobytes_to_bytes(value))
+    bytes_to_kilobytes(2048)
+    kilobytes_to_bytes(2)
