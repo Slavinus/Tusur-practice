@@ -21,3 +21,10 @@ def combinations(n, k):
         return(0)
     else:
         return(factorial(n)//(factorial(k)*factorial(n-k)))
+
+if __name__ == "__main__":
+    n = int(input())
+    k = int(input())
+    print (factorial(n))
+    print (arrangements(n, k))
+    print (combinations(n, k))

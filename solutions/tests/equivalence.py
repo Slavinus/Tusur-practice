@@ -21,3 +21,7 @@ def are_equivalent(f, g, n):
         if f(*row) != g(*row):
             return False
     return True
+
+if __name__ == "__main__":
+    print(are_equivalent(de_morgan_left, de_morgan_right, 2))
+    print(are_equivalent(de_morgan_left, wrong, 2))
