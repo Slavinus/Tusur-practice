@@ -1,7 +1,7 @@
 def multiplication_table(n):
+    res = []
     for i in range(1,11):
-        return (f"{n} * {i} = {n*i}")
-
+        res.append(f"{n} x {i} = {n*i}")
+    return res
 if __name__ == "__main__":
-    n = int(input("Введите число n"))
-    print(multiplication_table(n))
+    multiplication_table(7)
