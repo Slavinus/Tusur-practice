@@ -1,8 +1,7 @@
 def tetration(x, n):
-    a = 1
-    for i in range(x):
-        a = n ** a
-    return a
+    if n == 0:
+        return 1
+    return x ** tetration(x, n - 1)
 
 if __name__ == "__main__":
     n = int(input())
